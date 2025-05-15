@@ -1,14 +1,5 @@
 # WSTeX
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  _    _ _____   _         _____   __   __  _____ _               
-% | |  | /  ___| | |       |_   _|  \ \ / / /  __ \ |              
-% | |  | \ `--.  | |     __ _| | ___ \ V /  | /  \/ | __ _ ___ ___ 
-% | |/\| |`--. \ | |    / _` | |/ _ \/   \  | |   | |/ _` / __/ __|
-% \  /\  /\__/ / | |___| (_| | |  __/ /^\ \ | \__/\ | (_| \__ \__ \
-%  \/  \/\____/  \_____/\__,_\_/\___\/   \/  \____/_|\__,_|___/___/
-                                                                                                                              
-% Classe LaTeX para documentos científicos segundo as normas ABNT
+# Classe LaTeX para documentos científicos segundo as normas ABNT
 
 Aviso de Direitos Autorais:
 
@@ -37,14 +28,10 @@ Autor: Wladimir Seixas
 email: seixas@ufscar.br
 Versão: 15/05/2025
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 ATENÇÃO: Arquivos de template -> não remover/editar
 
 wstex.cls  -> template para monografias
 logos      -> diretório de logos
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Arquivos editáveis pelo usuário
 
@@ -56,5 +43,3 @@ Arquivos PDFs:
 folha-aprovacao.pdf (exemplo - a ser substituído pelo usuário)
 ficha-catalografica.pdf (exemplo - a ser substituído pelo usuário)
 latexsheet.pdf (exemplo - arquivo pdf como anexo)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

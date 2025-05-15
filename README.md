@@ -19,15 +19,19 @@ Agradeço pela compreensão e cooperação no respeito aos direitos autorais e �
 # ATENÇÃO: Arquivos de template -> não remover/editar
 
 wstex.cls  -> template para monografias
+
 logos      -> diretório de logos
 
 # Arquivos editáveis pelo usuário
 
 monografia.tex      -> arquivo LaTeX da monografia 
+
 referencias.bib     -> arquivo BibTeX contendo a bibliografia
 
 # Arquivos PDFs:
 
 folha-aprovacao.pdf (exemplo - a ser substituído pelo usuário)
+
 ficha-catalografica.pdf (exemplo - a ser substituído pelo usuário)
+
 latexsheet.pdf (exemplo - arquivo pdf como anexo)

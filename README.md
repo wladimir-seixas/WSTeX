@@ -16,7 +16,7 @@ O não cumprimento destas condições pode resultar em consequências legais, in
 
 Agradeço pela compreensão e cooperação no respeito aos direitos autorais e à propriedade intelectual.
 
-Correções e sugestões são bem-vindas!
+Agradeço antecipadamente por quaisquer correções ou sugestões.
 
 # Arquivos de template (não remover/editar)
 

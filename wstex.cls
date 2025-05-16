@@ -774,13 +774,18 @@
 		\end{center}
 	\end{mdframed}
 	\null
-	\centering Classe \LaTeX\/ para documentos científicos segundo as normas ABNT \\ desenvolvido por Wladimir Seixas.
 }
 
 % ABNT: Elaboração de Lista de Siglas - opcional
 
 % Define e gerencia acrônimos e siglas no texto.
 \RequirePackage{acronym}
+
+\AtEndDocument{%
+	\thispagestyle{empty}
+	\renewcommand*\footnoterule{}
+	{\let\thefootnote\relax\footnote{Classe \LaTeX\/ para documentos científicos segundo as normas ABNT desenvolvido por Wladimir Seixas.}}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EOF: WSTEX.CLS

@@ -16,7 +16,7 @@ O não cumprimento destas condições pode resultar em consequências legais, in
 
 Agradeço pela compreensão e cooperação no respeito aos direitos autorais e à propriedade intelectual.
 
-# ATENÇÃO: Arquivos de template -> não remover/editar
+# Arquivos de template (não remover/editar)
 
 wstex.cls  -> template para monografias
 

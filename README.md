@@ -4,7 +4,7 @@ Autor: Wladimir Seixas
 
 email: seixas@ufscar.br
 
-Versão: 15/05/2025
+Versão: 16/05/2025
 
 # Aviso de Direitos Autorais:
 
@@ -15,6 +15,8 @@ O autor deste template investiu tempo e esforço significativos na sua criação
 O não cumprimento destas condições pode resultar em consequências legais, incluindo, mas não se limitando a ações judiciais por violação de direitos autorais.
 
 Agradeço pela compreensão e cooperação no respeito aos direitos autorais e à propriedade intelectual.
+
+Correções e sugestões são bem-vindas!
 
 # Arquivos de template (não remover/editar)
 

@@ -33,12 +33,12 @@
 
 % Autor: Wladimir Seixas
 % email: seixas@ufscar.br
-% Versão: 15/05/2025
+% Versão: Junho/2026
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wstex}[2025 WSTeX]
+\ProvidesClass{wstex}[2026 WSTeX]
 
 % Permite controle condicional do código LaTeX, similar ao "if" de 
 % linguagens de programação.
@@ -317,7 +317,7 @@
 	\ps@empty
 	\begin{singlespace}
 		\parindent \z@ \centering
-		\includegraphics[width=3cm,height=3cm,keepaspectratio]{\@logotipo} \par \vskip 1em
+		\includegraphics[width=3.5cm,height=3.5cm,keepaspectratio]{\@logotipo} \par \vskip 1em
 		\begin{minipage}[c]{\textwidth}
 			\begin{center}
 				{\MakeUppercase{\@instituicao}} \\
@@ -497,7 +497,7 @@
 \setlength{\cftsubsubsecindent}{0pt}
 
 \newlength{\sizenumber}
-\settowidth{\sizenumber}{MMM}
+\settowidth{\sizenumber}{MMMM}
 
 \setlength{\cftchapnumwidth}{\sizenumber}
 \setlength{\cftsecnumwidth}{\sizenumber}
@@ -529,8 +529,6 @@
 \RequirePackage{varioref}
 % Equações são enumeradas continuamente.
 \counterwithout{equation}{chapter}
-% Referência numérica de uma equação estará entre parêntesis.
-\labelformat{equation}{(#1)}
 
 % Redefine funções matemáticas em português
 \def\sin{\mathop{\operator@font sen}\nolimits}
@@ -622,7 +620,7 @@
 	{\parindent \z@ \centering
 		\normalfont\large\bfseries RESUMO \par}
 	\vskip \baselineskip
-	\normalfont
+	\normalfont\noindent
 }
 
 \def\resumofim{\null\vskip \baselineskip \par\noindent
@@ -651,7 +649,7 @@
 	{\parindent \z@ \centering
 		\normalfont\large\bfseries ABSTRACT \par}
 	\vskip \baselineskip
-	\normalfont
+	\normalfont\noindent
 }
 
 \def\absfim{\null\vskip \baselineskip \par\noindent
@@ -746,6 +744,19 @@
 	\restoreapp
 }
 
+\newcommand{\declaracaoIA}[2]{
+\chapter*{Declaração}
+\addcontentsline{toc}{chapter}{Declaração}
+
+Este trabalho utilizou a ferramenta de Inteligência Artificial \text{#1} em etapas específicas do processo de pesquisa, com a finalidade de apoiar a revisão linguística e a melhoria da qualidade textual do manuscrito. 
+
+Na etapa de edição e revisão do texto, o \text{#2} foi empregado exclusivamente para auxiliar na correção gramatical, ortográfica, de pontuação e na melhoria da fluidez da redação. Para esse fim, foram utilizados comandos que restringiam a atuação da ferramenta à revisão linguística, vedando a inclusão de novas informações, interpretações, argumentos ou conteúdos que não estivessem presentes na versão original do texto. As sugestões geradas limitaram-se ao aprimoramento da clareza, da coerência, da coesão e da organização textual, sendo incorporadas ao manuscrito somente após criteriosa análise, verificação e validação {\ifx\@autora\@empty pelo  autor\else pela autora\fi}.
+
+O \text{#2} não foi utilizado para produzir resultados científicos, elaborar análises, interpretar dados, formular conclusões ou substituir o julgamento acadêmico {\ifx\@autora\@empty do autor\else da autora\fi}. Sua utilização restringiu-se ao apoio na revisão da redação e na melhoria da apresentação textual do trabalho.
+
+Embora o \text{#2} tenha contribuído para a revisão de diferentes trechos deste trabalho, {\ifx\@autora\@empty o autor\else a autora\fi} permanece integralmente responsável pela precisão, pela originalidade, pela integridade e pela autenticidade do conteúdo apresentado. Todo o material revisado com o auxílio dessa ferramenta foi cuidadosamente analisado e, quando necessário, ajustado {\ifx\@autora\@empty pelo autor\else pela autora\fi}, de modo a assegurar sua conformidade com os princípios éticos da pesquisa acadêmica, bem como com as normas e diretrizes estabelecidas pela Universidade.
+}
+
 % Cria caixas destacadas com bordas e personalizações.
 \RequirePackage[framemethod=tikz]{mdframed}
 
@@ -784,7 +795,7 @@
 \AtEndDocument{%
 	\thispagestyle{empty}
 	\renewcommand*\footnoterule{}
-	{\let\thefootnote\relax\footnote{Classe \LaTeX\/ para documentos científicos segundo as normas ABNT desenvolvido por Wladimir Seixas.}}
+	{\let\thefootnote\relax\footnote{Classe \LaTeX\/ para documentos científicos segundo as normas ABNT, desenvolvida por Wladimir Seixas.}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

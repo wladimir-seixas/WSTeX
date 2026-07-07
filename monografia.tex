@@ -32,7 +32,7 @@
 %
 % Autor: Wladimir Seixas
 % email: seixas@ufscar.br
-% Versão: 15/05/2025
+% Versão: Julho/2026
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Documento LaTeX baseado na classe REPORT
@@ -88,6 +88,11 @@
 % (ver tabela acima)
 % \usepackage[•]{•}
 
+% mathtools: somente serão enumeradas as equações que forem citadas no texto.
+% Comentar as próximas duas linhas caso não desejar este recurso.
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +103,7 @@
 \instituicao{Nome da Instituição}
 
 % Define o arquivo de logotipo da instituição
-\logotipo{./logos/LogoUFSCar}
+\logotipo{./logos/UFSCar-sigla-preto}
 
 % Instituto/Centro
 \centro{Nome do Centro/Instituto/Faculdade}
@@ -112,7 +117,7 @@
 \area{Área de concentração}
 
 % Ano da defesa depósito
-\ano{2025}
+\ano{2026}
 
 % Título do trabalho
 \titulo{Título do trabalho}
@@ -251,7 +256,7 @@
 % esquemas, fluxogramas, fotografias, gráficos, mapas, organogramas, plantas,
 % quadros, retratos e outras. Recomenda-se criar lista própria, sempre que o número
 % de itens ultrapassar 5. Sua construção gráfica é a mesma do Sumário.
-% Comente as próximas duas linhas caso não haja ilustrações.
+% Comente as próximas cinco linhas caso não haja ilustrações.
 \cleardoublepage
 \begingroup
 \renewcommand*{\addvspace}[1]{} % Elimina o espaço entre capítulos
@@ -262,7 +267,7 @@
 % Elemento OPCIONAL elaborada de acordo com a ordem apresentada no texto, tendo
 % cada item designado por seu nome específico, acompanhado do respectivo número
 % da folha ou página.
-% Comente as próximas duas linhas caso não haja tabelas.
+% Comente as próximas cinco linhas caso não haja tabelas.
 \cleardoublepage
 \begingroup
 \renewcommand*{\addvspace}[1]{} % Elimina o espaço entre capítulos
@@ -273,7 +278,7 @@
 % Elemento OPCIONAL elaborada de acordo com a ordem apresentada no texto, tendo
 % cada item designado por seu nome específico, acompanhado do respectivo número
 % da folha ou página.
-% Comente as próximas duas linhas caso não haja quadros.
+% Comente as próximas cinco linhas caso não haja quadros.
 \cleardoublepage
 \begingroup
 \renewcommand*{\addvspace}[1]{} % Elimina o espaço entre capítulos
@@ -322,9 +327,8 @@
 % visualmente o texto e devem ser inseridas próximo ao trecho do texto a que 
 % se referem. O número e o título da figura devem vir acima dela, enquanto a 
 % fonte deve aparecer embaixo. Se a figura for de elaboração do autor do texto
-% colocar
-%               Fonte: Elaborada pelo autor.
-% Se o autor for do sexo feminino colocar "Elaborado pela autora".
+% colocar Fonte: Elaborada pelo autor.
+% Se o autor for do sexo feminino colocar "Fonte: Elaborada pela autora".
 % São enumeradas sequencialmente.
 %
 % \begin{figure}[H]
@@ -338,8 +342,8 @@
 
 % No texto: as tabelas são formadas por linhas verticais, devem manter suas bordas
 % laterais abertas e geralmente são utilizadas para dados quantitativos. Devem ter: 
-% a) um título; b) um cabeçalho; c) um corpo contendo dados numéricos; d) uma linha 
-% de fechamento; e) uma fonte; f) notas explicativas, se precisar. O número e o 
+% (a) um título; (b) um cabeçalho; (c) um corpo contendo dados numéricos; (d) uma linha 
+% de fechamento; (e) uma fonte; (f) notas explicativas, se precisar. O número e o 
 % título da tabela devem vir acima dela, enquanto a fonte deve aparecer embaixo.
 % São enumeradas sequencialmente.
 %
@@ -419,7 +423,6 @@ Para a citação como sujeito da frase: \textcites{cordeiro} faz diversas consid
 	\addcontentsline{toc}{chapter}{REFER\^{E}NCIAS} % Sumário
 \end{spacing}
 
-
 % Apêndice
 % Elemento OPCIONAL que apresenta texto ou documento elaborado pelo autor, a fim de
 % complementar sua argumentação. Deve ser precedido da palavra APÊNDICE,
@@ -439,9 +442,10 @@ Para a citação como sujeito da frase: \textcites{cordeiro} faz diversas consid
 % serve de fundamentação, comprovação e ilustração. Deve ser precedido da palavra
 % ANEXO, identificado por letras maiúsculas consecutivas, travessão e respectivo
 % título.
-% Descomente o ambiente a seguir caso fizer uso.
 
+% Comente o ambiente (linhas abaixo) a seguir caso fizer uso.
 \begin{appendices}
+
 	\renewcommand{\appendixname}{Anexo}
 	\setcounter{chapter}{0}
 
@@ -458,7 +462,26 @@ Para a citação como sujeito da frase: \textcites{cordeiro} faz diversas consid
 % USO: ao longo do texto, após a palavra que irá para o Índice colocar 
 % \index{<palavra>}
 % Maiores detalhes em https://pt.overleaf.com/learn/latex/Indices
+
+% Comente a linha abaixo caso não faça uso do índice. 
 \printindex
+
+% Declaração de uso de IA
+% A declaração de uso de Inteligência Artificial (IA) é uma exigência. 
+% O MEC (Ministério da Educação) e o CNPq não proíbem o uso de IA.
+% No entanto, esses orgãos exigem transparência total no seu uso. 
+% É obrigatório declarar qual ferramenta foi usada, a versão e a finalidade 
+% específica. No comando abaixo é feito um modelo de declaração para o uso 
+% apenas de revisão ortográfica. Se a IA foi utilizada de outra forma deverá 
+% ser redigido texto semelhante.
+
+% Comente a linha abaixo caso não faça uso deste modelo.
+\declaracaoIA{ChatGPT (Versão 5.5)}{ChatGPT}
+
+% Descomente caso desejar escrever sua própria declaração.
+%\chapter*{Declaração}
+% Coloque aqui o seu texto.
+
 
 % Licença Creative Commons
 \cleardoublepage

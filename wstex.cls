@@ -33,7 +33,7 @@
 
 % Autor: Wladimir Seixas
 % email: seixas@ufscar.br
-% Versão: Junho/2026
+% Versão: Julho/2026
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

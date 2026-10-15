@@ -33,7 +33,7 @@
 
 % Autor: Wladimir Seixas
 % email: seixas@ufscar.br
-% Versão: Julho/2026
+% Versão: Outubro/2026
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -49,15 +49,9 @@
 \newif\if@mestre
 \newif\if@doutor
 
-% Define a variável curso de graduação
-\def\curso#1{\gdef\@curso{#1}}
-\curso{Licenciatura/Bacharelado}
-
 % Opções de documentos
 \DeclareOption{relatorio}{\@relatoriotrue}
 \DeclareOption{tcc}{\@tcctrue}
-\DeclareOption{licenciatura}{\curso{Licenciatura}}
-\DeclareOption{bacharelado}{\curso{Bacharelado}}
 \DeclareOption{mestre}{\@mestretrue}
 \DeclareOption{doutor}{\@doutortrue}
 
@@ -217,6 +211,10 @@
 % Variável autora
 \def\autora#1{\gdef\@autora{#1}}
 \global\let\@autora\@empty
+
+% Define a variável curso de graduação
+\def\curso#1{\gdef\@curso{#1}}
+\curso{Licenciatura/Bacharelado}
 
 % Área - Mestrado/Doutorado
 \def\area#1{\gdef\@area{#1}}
@@ -774,14 +772,16 @@ Embora o \text{#2} tenha contribuído para a revisão de diferentes trechos dest
 	\fi
 	\parindent \z@
 	\null \vfill \par
+	\centering
 	\begin{mdframed}[outerlinecolor=black,
+	        userdefinedwidth=0.5\textwidth,
 			outerlinewidth=2pt,
 			linecolor=cccolor,
 			middlelinewidth=3pt,
-			roundcorner=10pt]
-		\centering Exceto quando indicado o contrário, a licença deste item é descrito como \\ Attribution-NonCommercial-NoDerivs 3.0 Brazil
+			roundcorner=10pt,
+			align=center]
 		\begin{center}
-			\includegraphics[scale=1.3]{./logos/by-nc-nd}
+			\includegraphics[width=\textwidth]{./logos/cc}
 		\end{center}
 	\end{mdframed}
 	\null

@@ -4,7 +4,7 @@ Autor: Wladimir Seixas
 
 email: seixas@ufscar.br
 
-Versão: Julho/2026
+Versão: Outubro/2026
 
 # Aviso de Direitos Autorais:
 

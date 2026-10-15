@@ -32,7 +32,7 @@
 %
 % Autor: Wladimir Seixas
 % email: seixas@ufscar.br
-% Versão: Julho/2026
+% Versão: Outubro/2026
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Documento LaTeX baseado na classe REPORT
@@ -68,10 +68,8 @@
 % Opcional: twoside -> impressão do documento frente-verso.
 %                      Não utilizar para a versão digital
 
-%\documentclass[tcc]{wstex}
-%\documentclass[tcc,licenciatura]{wstex}
-%\documentclass[tcc,bacharelado]{wstex}
-\documentclass[mestre]{wstex}
+\documentclass[tcc]{wstex}
+%\documentclass[mestre]{wstex}
 %\documentclass[doutor]{wstex}
 
 % Para relatórios de disciplinas e pesquisa
@@ -108,10 +106,17 @@
 % Instituto/Centro
 \centro{Nome do Centro/Instituto/Faculdade}
 
+% Descomentar para TCC
 % Depto responsável para opção tcc-gradução
-%\progresp{Departamento ou Curso} 
+\progresp{Departamento ou Curso}
+
+% Curso -> somente para TCC
+%\curso{Licenciatura em ???}
+\curso{Bacharelado em ???}
+
+% Descomentar para Pós-Graduação
 % Programa responsável para opção pós-graduação
-\progresp{Programa de Pós-Graduação Responsável}
+%\progresp{Programa de Pós-Graduação Responsável}
 
 % Área OPCIONAL somente para Mestrado/Doutorado
 \area{Área de concentração}
